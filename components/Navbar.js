@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Menu, X, MessageSquare, Users, User, Settings } from "lucide-react";
+import { Menu, X, MessageSquare, Users, House, Settings, BookOpenText } from "lucide-react";
 import { UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
@@ -32,9 +32,9 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
+            <NavLink icon={House} label="Home" href="#" />
             <NavLink icon={MessageSquare} label="Chat" href="#" />
-            <NavLink icon={Users} label="Friends" href="#" />
-            <NavLink icon={Settings} label="Settings" href="#" />
+            <NavLink icon={BookOpenText} label="Forums" href="#" />
             <UserButton/>
           </div>
 
@@ -42,7 +42,9 @@ const Navbar = () => {
           <div className="md:hidden">
             <button onClick={() => setMenuOpen((prev) => !prev)} className="text-white">
               {menuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+              
             </button>
+            <span className="px-3"><UserButton/></span>
           </div>
         </div>
       </div>
@@ -54,10 +56,9 @@ const Navbar = () => {
         } bg-white overflow-hidden shadow-md`}
       >
         <div className="flex flex-col px-6 py-4 space-y-4">
+          <NavLink icon={House} label="Home" href="#" mobile />
           <NavLink icon={MessageSquare} label="Chat" href="#" mobile />
-          <NavLink icon={Users} label="Friends" href="#" mobile />
-          <NavLink icon={Settings} label="Settings" href="#" mobile />
-          <span className="flex items-center gap-2 text-[#004E89] font-bold hover:text-[#3e4cf4]"><UserButton/> Profile</span>
+          <NavLink icon={BookOpenText} label="Forums" href="#" mobile />
         </div>
       </div>
     </nav>
