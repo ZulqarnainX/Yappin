@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Menu, X, MessageSquare, Users, User, Settings } from "lucide-react";
+import { UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,8 +34,8 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <NavLink icon={MessageSquare} label="Chat" href="#" />
             <NavLink icon={Users} label="Friends" href="#" />
-            <NavLink icon={User} label="Profile" href="#" />
             <NavLink icon={Settings} label="Settings" href="#" />
+            <UserButton/>
           </div>
 
           {/* Hamburger */}
@@ -55,8 +56,8 @@ const Navbar = () => {
         <div className="flex flex-col px-6 py-4 space-y-4">
           <NavLink icon={MessageSquare} label="Chat" href="#" mobile />
           <NavLink icon={Users} label="Friends" href="#" mobile />
-          <NavLink icon={User} label="Profile" href="#" mobile />
           <NavLink icon={Settings} label="Settings" href="#" mobile />
+          <span className="flex items-center gap-2 text-[#004E89] font-bold hover:text-[#3e4cf4]"><UserButton/> Profile</span>
         </div>
       </div>
     </nav>
