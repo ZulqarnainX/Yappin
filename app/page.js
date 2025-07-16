@@ -1,25 +1,106 @@
-"use client"
-
+"use client";
 import Image from "next/image";
 import Particles from "@/Reactbits/Particles/Particles";
+import { MessageCircle, Users, Zap, ArrowRight } from 'lucide-react'; // Importing icons from lucide-react
+import { RotateWords } from "@/FramerMotion/rotate-words";
+
 
 export default function Home() {
   return (
-    <main className=" min-h-screen">
-      <div className="bg-[#CDF5FD]">
-        <div style={{ width: '100%', height: '100vh', position: 'relative' }}>
+    <div className="min-h-screen bg-gradient-to-b from-[#CDF5FD] via-[#89CFF3] to-[#00A9FF] font-inter text-gray-800 antialiased pt-[100px]">
+      {/* Hero Section */}
+      <main className="relative py-20 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
           <Particles
-            particleColors={['#00A9FF', '#89CFF3']}
+            particleColors={["#00A9FF", "#89CFF3", "#ffffff"]}
             particleCount={1000}
-            particleSpread={10}
-            speed={0.1}
-            particleBaseSize={100}
-            moveParticlesOnHover={true}
-            alphaParticles={false}
+            particleSpread={12}
+            speed={0.15}
+            particleBaseSize={70}
+            moveParticlesOnHover={false}
+            alphaParticles={true}
             disableRotation={false}
           />
         </div>
-      </div>
-    </main>
+        <div className="relative z-10 container mx-auto max-w-4xl">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight text-gray-900 mb-6">
+            <RotateWords text="Chat&nbsp;" words={["Yappfully", "Non-Stop", "Anytime", "Freely", "Unfiltered", "Comfortably"]} />
+            Connect Instantly.
+          </h1>
+          <p className="text-xl sm:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto">
+            Yappin brings your conversations to life with seamless, real-time messaging and vibrant communities.
+          </p>
+          <div className="flex justify-center space-x-4">
+            <button className="group px-8 py-4 rounded-full bg-[#3f4ef3] text-white text-lg font-semibold shadow-xl hover:bg-blue-700 transition duration-300 transform hover:-translate-y-1 flex items-center space-x-3">
+              <span>Start Yappin Now</span>
+              <ArrowRight className="w-6 h-6 transform group-hover:translate-x-1 transition-transform duration-300" />
+            </button>
+            <button className="px-8 py-4 rounded-full bg-white text-[#004E89] font-bold text-lg border border-blue-200 shadow-md hover:bg-blue-50 transition duration-300 transform hover:-translate-y-1">
+              Learn More
+            </button>
+          </div>
+
+          {/* Placeholder for a visual element or screenshot */}
+          <div className="mt-20 bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
+            <img
+              src="https://placehold.co/1200x600/E0F2FE/2563EB?text=Yappin+Chat+Interface+Screenshot"
+              alt="Yappin Chat Interface Mockup"
+              className="w-full h-auto rounded-2xl object-cover shadow-lg"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = 'https://placehold.co/1200x600/E0F2FE/2563EB?text=Yappin+Chat+Interface+Screenshot';
+              }}
+            />
+          </div>
+        </div>
+      </main>
+
+      {/* Features Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Why Choose Yappin?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {/* Feature Card 1 */}
+            <div className="bg-gradient-to-br from-blue-50 to-sky-50 p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out border border-blue-100">
+              <div className="flex justify-center mb-6">
+                <MessageCircle className="w-16 h-16 text-blue-500" />
+              </div>
+              <h3 className="text-2xl font-semibold text-center text-gray-800 mb-4">Real-time Messaging</h3>
+              <p className="text-gray-600 text-center">Experience lightning-fast message delivery and instant updates. Never miss a beat in your conversations.</p>
+            </div>
+
+            {/* Feature Card 2 */}
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out border border-blue-100">
+              <div className="flex justify-center mb-6">
+                <Users className="w-16 h-16 text-cyan-600" />
+              </div>
+              <h3 className="text-2xl font-semibold text-center text-gray-800 mb-4">Vibrant Communities</h3>
+              <p className="text-gray-600 text-center">Join or create groups based on your interests. Connect with like-minded individuals from around the world.</p>
+            </div>
+
+            {/* Feature Card 3 */}
+            <div className="bg-gradient-to-br from-blue-50 to-teal-50 p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out border border-blue-100">
+              <div className="flex justify-center mb-6">
+                <Zap className="w-16 h-16 text-teal-600" />
+              </div>
+              <h3 className="text-2xl font-semibold text-center text-gray-800 mb-4">Intuitive Interface</h3>
+              <p className="text-gray-600 text-center">Enjoy a clean, user-friendly design that makes chatting simple and enjoyable for everyone.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6">Ready to Start Yappin?</h2>
+          <p className="text-xl mb-10 opacity-90">Join thousands of users who are already enjoying seamless conversations.</p>
+          <button className="group px-10 py-5 rounded-full bg-white text-blue-700 text-xl font-bold shadow-2xl hover:bg-gray-100 transition duration-300 transform hover:-translate-y-1 flex items-center justify-center mx-auto space-x-3">
+            <span>Get Started Free</span>
+            <ArrowRight className="w-7 h-7 transform group-hover:translate-x-1 transition-transform duration-300" />
+          </button>
+        </div>
+      </section>
+    </div>
   );
 }

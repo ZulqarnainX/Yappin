@@ -16,7 +16,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-gradient-to-br from-[#00A9FF] via-[#89CFF3] to-[#CDF5FD] w-full fixed top-0 left-0 z-50 shadow-md">
+    <nav className="bg-gradient-to-br from-[#00A9FF] via-[#89CFF3] to-[#a2d8e4fa] w-full fixed top-0 left-0 z-50 shadow-md">
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex md:px-60 items-center justify-between h-20">
           {/* Logo */}
@@ -32,9 +32,9 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <NavLink icon={House} label="Home" href="#" />
-            <NavLink icon={MessageSquare} label="Chat" href="#" />
-            <NavLink icon={BookOpenText} label="Forums" href="#" />
+            <NavLink icon={House} label="Home" href="/" />
+            <NavLink icon={MessageSquare} label="Chat" href="/chat" />
+            <NavLink icon={BookOpenText} label="Forums" href="/forums" />
             <UserButton/>
           </div>
 
@@ -56,9 +56,9 @@ const Navbar = () => {
         } bg-white overflow-hidden shadow-md`}
       >
         <div className="flex flex-col px-6 py-4 space-y-4">
-          <NavLink icon={House} label="Home" href="#" mobile />
-          <NavLink icon={MessageSquare} label="Chat" href="#" mobile />
-          <NavLink icon={BookOpenText} label="Forums" href="#" mobile />
+          <NavLink icon={House} label="Home" href="/" mobile />
+          <NavLink icon={MessageSquare} label="Chat" href="/chat" mobile />
+          <NavLink icon={BookOpenText} label="Forums" href="/forums" mobile />
         </div>
       </div>
     </nav>
