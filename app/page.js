@@ -5,6 +5,7 @@ import { MessageCircle, Users, Zap, ArrowRight } from 'lucide-react'; // Importi
 import { RotateWords } from "@/FramerMotion/rotate-words";
 
 
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#CDF5FD] via-[#89CFF3] to-[#00A9FF] font-inter text-gray-800 antialiased pt-[100px]">
@@ -58,7 +59,7 @@ export default function Home() {
       {/* Features Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Why Choose Yappin?</h2>
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-14">Why Choose Yappin?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {/* Feature Card 1 */}
             <div className="bg-gradient-to-br from-blue-50 to-sky-50 p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out border border-blue-100">
@@ -74,8 +75,8 @@ export default function Home() {
               <div className="flex justify-center mb-6">
                 <Users className="w-16 h-16 text-cyan-600" />
               </div>
-              <h3 className="text-2xl font-semibold text-center text-gray-800 mb-4">Vibrant Communities</h3>
-              <p className="text-gray-600 text-center">Join or create groups based on your interests. Connect with like-minded individuals from around the world.</p>
+              <h3 className="text-2xl font-semibold text-center text-gray-800 mb-4">Community Forums</h3>
+              <p className="text-gray-600 text-center">Explore forums based on your interests or start your own. Share ideas, ask questions, and connect with people.</p>
             </div>
 
             {/* Feature Card 3 */}
@@ -94,7 +95,7 @@ export default function Home() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center">
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">Ready to Start Yappin?</h2>
-          <p className="text-xl mb-10 opacity-90">Join thousands of users who are already enjoying seamless conversations.</p>
+          <p className="text-xl mb-10 opacity-90">Be part of something new. Real-time chat made simple and fun.</p>
           <button className="group px-10 py-5 rounded-full bg-white text-blue-700 text-xl font-bold shadow-2xl hover:bg-gray-100 transition duration-300 transform hover:-translate-y-1 flex items-center justify-center mx-auto space-x-3">
             <span>Get Started Free</span>
             <ArrowRight className="w-7 h-7 transform group-hover:translate-x-1 transition-transform duration-300" />
