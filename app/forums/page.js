@@ -40,7 +40,7 @@ const Forums = () => {
   return (
     <div className="min-h-[calc(100vh-5rem)] overflow-hidden bg-gradient-to-b from-[#CDF5FD] via-[#89CFF3] to-[#00A9FF] font-inter text-gray-800 antialiased">
   <div className='container mx-auto py-10 px-4 sm:px-6 lg:px-8'> 
-    <h1 className='text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight text-gray-900 mb-12 text-center drop-shadow-lg'> 
+    <h1 className='text-5xl sm:text-5xl lg:text-4xl font-extrabold leading-tight text-gray-900 mb-12 text-center drop-shadow-lg'> 
       Discussion Forums
     </h1>
     <div className='flex flex-wrap justify-center gap-8'> 
