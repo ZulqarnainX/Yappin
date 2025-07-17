@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+
 import {
   ClerkProvider,
   SignInButton,
@@ -23,9 +24,6 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Yappin - Built for Talkers",
   description: "Yappin is a real-time messaging platform focused on authentic, fast, and expressive communication. Designed for casual conversations, group chats, and spontaneous moments.",
-  icons: {
-    icon: "/favicon.png", 
-  },
 };
 
 export default function RootLayout({ children }) {
