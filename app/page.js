@@ -13,14 +13,14 @@ export default function Home() {
       <main className="relative py-20 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Particles
-            particleColors={["#00A9FF", "#89CFF3", "#ffffff"]}
+            particleColors={["#00A9FF", "#89CFF3", "#A0E9FF"]}
             particleCount={1000}
             particleSpread={12}
             speed={0.15}
-            particleBaseSize={70}
-            moveParticlesOnHover={false}
+            particleBaseSize={125}
+            moveParticlesOnHover={true}
             alphaParticles={true}
-            disableRotation={false}
+            disableRotation={true}
           />
         </div>
         <div className="relative z-10 container mx-auto max-w-4xl">
@@ -32,11 +32,11 @@ export default function Home() {
             Yappin brings your conversations to life with seamless, real-time messaging and vibrant communities.
           </p>
           <div className="flex justify-center space-x-4">
-            <button className="group px-8 py-4 rounded-full bg-[#3f4ef3] text-white text-lg font-semibold shadow-xl hover:bg-blue-700 transition duration-300 transform hover:-translate-y-1 flex items-center space-x-3">
+            <button className="cursor-pointer group px-8 py-4 rounded-full bg-[#3f4ef3] text-white text-lg font-semibold shadow-xl hover:bg-blue-700 transition duration-300 transform hover:-translate-y-1 flex items-center space-x-3">
               <span>Start Yappin Now</span>
               <ArrowRight className="w-6 h-6 transform group-hover:translate-x-1 transition-transform duration-300" />
             </button>
-            <button className="px-8 py-4 rounded-full bg-white text-[#004E89] font-bold text-lg border border-blue-200 shadow-md hover:bg-blue-50 transition duration-300 transform hover:-translate-y-1">
+            <button className="cursor-pointer px-8 py-4 rounded-full bg-white text-[#004E89] font-bold text-lg border border-blue-200 shadow-md hover:bg-blue-50 transition duration-300 transform hover:-translate-y-1">
               Learn More
             </button>
           </div>
