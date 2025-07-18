@@ -57,7 +57,7 @@ const Forums = () => {
           <h2 className='text-2xl font-semibold text-gray-800 mb-2'>{topic.text}</h2> 
           <p className='text-gray-600 mb-4 flex-grow'>{topic.desc}</p> 
           
-          <Link href={`/chat/${topic.slug}`}>
+          <Link href={`/forum/${topic.slug}`}>
           <button className="group px-4 py-2 rounded-full bg-[#3f4ef3] font-semibold text-white text-[17px] shadow-xl hover:bg-blue-700 transition duration-300 flex items-center space-x-3 cursor-pointer">
               <span>Discuss Now</span>
               <ArrowRight className="w-6 h-6 transform group-hover:translate-x-1 transition-transform duration-300" />
