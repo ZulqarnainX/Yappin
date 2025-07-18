@@ -24,13 +24,12 @@ export default function Home() {
           />
         </div>
         <div className="relative z-10 container mx-auto max-w-4xl">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight text-gray-900 mb-6">
-            <RotateWords text="Chat&nbsp;" words={["Yappfully", "Non-Stop", "Anytime", "Freely", "Unfiltered", "Comfortably"]} />
+          <h1 className="text-5xl transition-all sm:text-6xl lg:text-7xl font-extrabold leading-tight text-gray-900 mb-6">
+            <RotateWords text="Chat&nbsp;" words={["Yappfully", "Non-Stop", "Anytime", "Together", "Endless", "Regularly"]} />
             Connect Instantly.
           </h1>
           <p className="text-xl sm:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            Yappin brings your conversations to life with seamless, real-time messaging and vibrant communities.
-          </p>
+            Yappin is real-time messaging that feels smooth, simple, and natural.</p>
           <div className="flex justify-center space-x-4">
             <button className="cursor-pointer group px-8 py-4 rounded-full bg-[#3f4ef3] text-white text-lg font-semibold shadow-xl hover:bg-blue-700 transition duration-300 transform hover:-translate-y-1 flex items-center space-x-3">
               <span>Start Yappin Now</span>
