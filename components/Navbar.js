@@ -2,8 +2,11 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, MessageSquare, Users, House, Settings, BookOpenText } from "lucide-react";
 import { UserButton } from "@clerk/nextjs";
+// import { useUser } from "@clerk/nextjs";
 
 const Navbar = () => {
+  // const user = useUser();
+  // console.log(user.user?.id); 
   const [menuOpen, setMenuOpen] = useState(false);
 
   // Close menu on resize to desktop

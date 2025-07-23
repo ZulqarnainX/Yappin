@@ -1,18 +1,7 @@
-import { Chat, useCreateChatClient } from 'stream-chat-react';
 
-// your Stream app information
-const apiKey = '';
-const userId = '';
-const userName = '';
-const userToken = '';
+import ChatForum from '@/components/ChatForum';
 
-export default async function Page({ params}) {
-    const client = useCreateChatClient({
-    apiKey,
-    tokenOrProvider: userToken,
-    userData: { id: userId, name: userName },
-  });
-
+export default async function Page({ params }) {
     const slug = (await params).slug
-    return <div>My Post: {slug}</div>
+    return <ChatForum slug={slug}/>
 }
