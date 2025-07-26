@@ -1,5 +1,5 @@
 import { StreamChat } from "stream-chat";
-import { clerkClient } from "@clerk/nextjs/server"; // ✅ correct import for App Router
+
 
 const api_key = process.env.NEXT_PUBLIC_STREAM_API_KEY;
 const api_secret = process.env.STREAM_API_SECRET;
@@ -19,33 +19,25 @@ export async function POST(request) {
     }
 
     const token = serverClient.createToken(userId);
-    console.log("Generated Stream token:", token);
 
     // Create Stream user
     await serverClient.upsertUser({ id: userId });
 
-    // ✅ Set token in Clerk publicMetadata
-    // await clerkClient.users.updateUserMetadata(userId, {
-    //   publicMetadata: {
-    //     token: token, // already string
-    //   },
-    // });
-    console.log("Token saved to Clerk metadata.");
 
     // Create and join channels
     const slugs = [
-      "python-new",
-      "frontend-new",
-      "projects-new",
-      "career-new",
-      "gaming-new",
-      "anime-new",
+      "python-ai",
+      "frontend-tech",
+      "projects",
+      "career",
+      "gaming",
+      "anime-cartoons",
     ];
 
     await Promise.all(
       slugs.map(async (item) => {
         const channel = serverClient.channel("messaging", item, {
-          image: "https://getstream.io/random_png/?name=react",
+          image: `http://localhost:3000/channel-pfps/${item}.png`,
           name: captialize(item) + " Discussion",
           created_by_id: userId,
         });
@@ -54,7 +46,11 @@ export async function POST(request) {
       })
     );
 
-    return Response.json({ message: "User created, metadata saved, channels joined." });
+    return Response.json({
+      message: "User created, channels joined.",
+      token, //  return token in response
+    });
+
 
   } catch (err) {
     console.error("Error in /api/create:", err);

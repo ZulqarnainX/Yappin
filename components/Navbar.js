@@ -6,7 +6,6 @@ import { UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
   // const user = useUser();
-  // console.log(user.user?.id); 
   const [menuOpen, setMenuOpen] = useState(false);
 
   // Close menu on resize to desktop

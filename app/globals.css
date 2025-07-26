@@ -125,3 +125,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+.str-chat__message-list {
+  height: 500px !important;         /* fixed height */
+  overflow-y: auto !important;      /* scroll only vertically */
+  padding: 1rem;                    /* optional spacing */
+  border-radius: 8px;
+  background-color: #f9f9f9;        /* optional light background */
+}
+
+/* Optional: Custom scrollbar */
+.str-chat__message-list::-webkit-scrollbar {
+  width: 8px;
+}
+.str-chat__message-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+.str-chat__message-list::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 10px;
+}
+
