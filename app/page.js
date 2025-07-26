@@ -31,11 +31,11 @@ export default function Home() {
           <p className="text-xl sm:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto">
             Yappin is real-time messaging that feels smooth, simple, and natural.</p>
           <div className="flex justify-center space-x-4">
-            <button className="cursor-pointer group px-8 py-4 rounded-full bg-[#3f4ef3] text-white text-lg font-semibold shadow-xl hover:bg-blue-700 transition duration-300 transform hover:-translate-y-1 flex items-center space-x-3">
+            <button className="cursor-pointer group px-5 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full bg-[#3f4ef3] text-white text-base sm:text-lg font-semibold shadow-xl hover:bg-blue-700 transition duration-300 transform hover:-translate-y-1 flex items-center space-x-2 sm:space-x-3">
               <span>Start Yappin Now</span>
               <ArrowRight className="w-6 h-6 transform group-hover:translate-x-1 transition-transform duration-300" />
             </button>
-            <button className="cursor-pointer px-8 py-4 rounded-full bg-white text-[#004E89] font-bold text-lg border border-blue-200 shadow-md hover:bg-blue-50 transition duration-300 transform hover:-translate-y-1">
+            <button className="cursor-pointer px-5 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full bg-white text-[#004E89] font-bold text-base sm:text-lg border border-blue-200 shadow-md hover:bg-blue-50 transition duration-300 transform hover:-translate-y-1">
               Learn More
             </button>
           </div>
