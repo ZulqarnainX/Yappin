@@ -21,7 +21,11 @@ export async function POST(request) {
     const token = serverClient.createToken(userId);
 
     // Create Stream user
-    await serverClient.upsertUser({ id: userId });
+    await serverClient.upsertUser({
+      id: userId,
+      name: user?.data?.name,
+      image: user?.data?.image,
+    });
 
 
     // Create and join channels
