@@ -42,7 +42,7 @@ export default function Home() {
 
           <div className="mt-20 bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
             <img
-              src="https://placehold.co/1200x600/E0F2FE/2563EB?text=Yappin+Chat+Interface+Screenshot"
+              src="/1000.gif"
               alt="Yappin Chat Interface Mockup"
               className="w-full h-auto rounded-2xl object-cover shadow-lg"
               onError={(e) => {
