@@ -4,12 +4,17 @@ import { useState, useEffect } from 'react';
 import { useCreateChatClient, Chat, Channel, ChannelHeader, MessageInput, MessageList, Thread, Window } from 'stream-chat-react';
 
 
+function captialize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 const ChatForum = ({ clerkUser, slug }) => {
 
     const apiKey = process.env.NEXT_PUBLIC_STREAM_API_KEY;
     const userId = clerkUser.id;
     const userName = clerkUser.name;
     const userToken = clerkUser.token;
+    console.log("TOKKEN WORKS HERE 1 : ", userToken);
 
     const user = {
         id: userId,
@@ -27,10 +32,9 @@ const ChatForum = ({ clerkUser, slug }) => {
     useEffect(() => {
         if (!client) return;
 
-        const channel = client.channel('messaging', 'custom_channel_id', {
+        const channel = client.channel('messaging', slug, {
             image: 'https://getstream.io/random_png/?name=react',
-            name: 'Talk about React',
-            members: [userId],
+            name: captialize(slug) + " Discussion",
         });
 
         setChannel(channel);
