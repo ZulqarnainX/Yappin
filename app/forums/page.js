@@ -72,3 +72,8 @@ const Forums = () => {
 }
 
 export default Forums
+
+export const metadata = {
+  title: 'Forums - Yappin',
+  description: 'Join the discussion forums on Yappin and connect with other users.',
+}
