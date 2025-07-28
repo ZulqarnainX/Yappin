@@ -52,12 +52,12 @@ const ChatForum = ({ clerkUser, slug }) => {
   if (!client || !channel) return <div className="p-4 text-center">Loading chat...</div>;
 
   return (
-    <div className="h-screen flex flex-col overflow-hidden">
+    <div className="min-h-[87vh] md:h-[95vh] flex flex-col overflow-hidden">
       <Chat client={client}>
         <Channel channel={channel}>
           <Window>
             <ChannelHeader />
-            <div className="flex-1 overflow-y-auto">
+            <div className="flex-1 overflow-hidden md:overflow-y-auto">
               <MessageList />
             </div>
             <div className="p-2 border-t bg-white">
@@ -68,6 +68,7 @@ const ChatForum = ({ clerkUser, slug }) => {
         </Channel>
       </Chat>
     </div>
+
   );
 };
 
