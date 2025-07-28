@@ -37,25 +37,23 @@ const Navbar = () => {
             <NavLink icon={House} label="Home" href="/" />
             <NavLink icon={MessageSquare} label="Chat" href="/chat" />
             <NavLink icon={BookOpenText} label="Forums" href="/forums" />
-            <UserButton/>
+            <UserButton />
           </div>
 
           {/* Hamburger */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-3">
             <button onClick={() => setMenuOpen((prev) => !prev)} className="text-white">
               {menuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
-              
             </button>
-            <span className="px-3"><UserButton/></span>
+            <UserButton />
           </div>
         </div>
       </div>
 
       {/* Smooth Dropdown */}
       <div
-        className={`md:hidden transition-all duration-500 ease-in-out w-full ${
-          menuOpen ? "opacity-100 translate-y-0 max-h-96" : "opacity-0 -translate-y-5 max-h-0"
-        } bg-white overflow-hidden shadow-md`}
+        className={`md:hidden transition-all duration-500 ease-in-out w-full ${menuOpen ? "opacity-100 translate-y-0 max-h-96" : "opacity-0 -translate-y-5 max-h-0"
+          } bg-white overflow-hidden shadow-md`}
       >
         <div className="flex flex-col px-6 py-4 space-y-4">
           <NavLink icon={House} label="Home" href="/" mobile />
@@ -70,11 +68,10 @@ const Navbar = () => {
 const NavLink = ({ icon: Icon, label, href, mobile }) => (
   <Link
     href={href}
-    className={`flex items-center gap-2 ${
-      mobile
+    className={`flex items-center gap-2 ${mobile
         ? "text-base text-[#004E89] font-bold hover:text-[#3e4cf4]"
         : "text-[#004E89] text-base font-bold hover:text-[#3e4cf4] hover:scale-105"
-    } transition duration-300`}
+      } transition duration-300`}
   >
     <Icon className="w-5 h-5" />
     <span>{label}</span>
