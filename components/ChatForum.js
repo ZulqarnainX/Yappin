@@ -51,25 +51,24 @@ const ChatForum = ({ clerkUser, slug }) => {
 
   if (!client || !channel) return <div className="p-4 text-center">Loading chat...</div>;
 
-  return (
-    <div className="min-h-[87vh] md:h-[95vh] flex flex-col overflow-hidden">
-      <Chat client={client}>
-        <Channel channel={channel}>
-          <Window>
-            <ChannelHeader />
-            <div className="flex-1 overflow-hidden md:overflow-y-auto">
-              <MessageList />
-            </div>
-            <div className="p-2 border-t bg-white">
-              <MessageInput />
-            </div>
-          </Window>
-          <Thread />
-        </Channel>
-      </Chat>
-    </div>
-
-  );
+ return (
+  <div className="flex flex-col h-[calc(100vh-80px)] overflow-hidden"> {/* 80px = navbar height */}
+    <Chat client={client}>
+      <Channel channel={channel}>
+        <Window>
+          <ChannelHeader />
+          <div className="flex-1 overflow-y-auto">
+            <MessageList />
+          </div>
+          <div className="p-2 border-t bg-white">
+            <MessageInput />
+          </div>
+        </Window>
+        <Thread />
+      </Channel>
+    </Chat>
+  </div>
+);
 };
 
 export default ChatForum;
