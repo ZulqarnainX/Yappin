@@ -150,3 +150,15 @@
 .str-chat__main-panel-inner.str-chat__message-list-main-panel {
   height: auto !important;
 }
+
+/* globals.css */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+
