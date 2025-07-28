@@ -88,7 +88,7 @@ const ChatForum = ({ clerkUser, slug }) => {
                   <span>{channel.data.name}</span>
                   <button
                     onClick={toggleTheme}
-                    className="ml-4 p-5 text-xl"
+                    className="ml-4 p-2 text-sm"
                   >
                     {theme === 'light' ? '🌙' : '☀️'}
                   </button>
