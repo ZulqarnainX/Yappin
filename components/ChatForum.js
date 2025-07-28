@@ -79,7 +79,7 @@ const ChatForum = ({ clerkUser, slug }) => {
 
   return (
     <div className="flex flex-col h-[calc(100vh-80px)] overflow-hidden">
-      <Chat client={client}>
+      <Chat client={client} theme={`str-chat__theme-${theme}`}>
         <Channel channel={channel}>
           <Window>
             <ChannelHeader
