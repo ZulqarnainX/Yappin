@@ -3,6 +3,7 @@ import Image from "next/image";
 import Particles from "@/Reactbits/Particles/Particles";
 import { MessageCircle, Users, Zap, ArrowRight } from 'lucide-react'; // Importing icons from lucide-react
 import { RotateWords } from "@/FramerMotion/rotate-words";
+import Link from 'next/link'
 
 
 
@@ -32,11 +33,11 @@ export default function Home() {
             Yappin is real-time messaging that feels smooth, simple, and natural.</p>
           <div className="flex justify-center space-x-4">
             <button className="cursor-pointer group px-5 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full bg-[#3f4ef3] text-white text-base sm:text-lg font-semibold shadow-xl hover:bg-blue-700 transition duration-300 transform hover:-translate-y-1 flex items-center space-x-2 sm:space-x-3">
-             <a href="/forums"><span>Start Yappin Now</span></a>
+              <Link href="/forums"><span>Start Yappin Now</span></Link>
               <ArrowRight className="w-6 h-6 transform group-hover:translate-x-1 transition-transform duration-300" />
             </button>
             <button className="cursor-pointer px-5 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full bg-white text-[#004E89] font-bold text-base sm:text-lg border border-blue-200 shadow-md hover:bg-blue-50 transition duration-300 transform hover:-translate-y-1">
-              <a href="/about">Learn More</a>
+              <Link href="/about">Learn More</Link>
             </button>
           </div>
 

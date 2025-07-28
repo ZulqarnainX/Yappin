@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 
  export default function ChatComingSoon() {
   return (
@@ -12,7 +13,7 @@
           We're building private messaging just for you. Stay tuned!
         </p>
         <p className="text-sm md:text-base text-blue-700">
-          Use <a className="underline font-semibold text-blue-900" href="/forums">Forums</a> Instead ?
+          Use <Link className="underline font-semibold text-blue-900" href="/forums">Forums</Link> Instead ?
         </p>
       </div>
 

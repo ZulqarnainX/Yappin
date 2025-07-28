@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, MessageSquare, Users, House, Settings, BookOpenText } from "lucide-react";
 import { UserButton } from "@clerk/nextjs";
-// import { useUser } from "@clerk/nextjs";
+import Link from 'next/link'
 
 const Navbar = () => {
   // const user = useUser();
@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex md:px-60 items-center justify-between h-20">
           {/* Logo */}
-          <a href="/" className="flex-shrink-0">
+          <Link href="/" className="flex-shrink-0">
             <img
               src="/logo.png"
               alt="Logo"
@@ -30,7 +30,7 @@ const Navbar = () => {
               draggable="false"
               className="select-none"
             />
-          </a>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
@@ -68,7 +68,7 @@ const Navbar = () => {
 };
 
 const NavLink = ({ icon: Icon, label, href, mobile }) => (
-  <a
+  <Link
     href={href}
     className={`flex items-center gap-2 ${
       mobile
@@ -78,7 +78,7 @@ const NavLink = ({ icon: Icon, label, href, mobile }) => (
   >
     <Icon className="w-5 h-5" />
     <span>{label}</span>
-  </a>
+  </Link>
 );
 
 export default Navbar;
