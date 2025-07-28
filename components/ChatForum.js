@@ -49,6 +49,18 @@ const ChatForum = ({ clerkUser, slug }) => {
     setChannel(channel);
   }, [client]);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const messageList = document.querySelector('.str-chat__list');
+      if (messageList) {
+        messageList.scrollTop = messageList.scrollHeight;
+      }
+    }, 300);
+
+    return () => clearInterval(interval);
+  }, []); // run once on mount
+
+
   if (!client || !channel) return <div className="p-4 text-center">Loading chat...</div>;
 
  return (
