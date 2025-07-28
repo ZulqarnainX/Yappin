@@ -13,7 +13,7 @@ export default function AboutPage() {
         </h1>
 
         <p className="text-base sm:text-lg md:text-xl mb-4 text-gray-700 animate-fade-in delay-100">
-          Yappin is a chat app designed for seamless communication. Built using modern tools like <strong>Next.js</strong>, <strong>Stream API</strong>, and <strong>NextAuth</strong>, it's here to provide a clean, secure messaging experience.
+          Yappin is a chat app designed for seamless communication. Built using modern tools like <strong>Next.js</strong>, <strong>Stream API</strong>, and <strong>NextAuth</strong>, it&apos;s here to provide a clean, secure messaging experience.
         </p>
 
         <p className="text-base sm:text-lg mb-4 text-gray-700 animate-fade-in delay-200">
