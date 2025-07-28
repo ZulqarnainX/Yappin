@@ -17,7 +17,7 @@ export default function AboutPage() {
         </p>
 
         <p className="text-base sm:text-lg mb-4 text-gray-700 animate-fade-in delay-200">
-          The project is still in early development. You might face bugs or missing features — but that's the beauty of building in public. If you're a developer, you're welcome to contribute!
+          The project is still in early development. You might face bugs or missing features — but that&apos;s the beauty of building in public. If you&apos;re a developer, you&apos;re welcome to contribute!
         </p>
 
         <p className="text-base sm:text-lg mb-6 text-gray-700 animate-fade-in delay-300">

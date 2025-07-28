@@ -10,7 +10,7 @@ import Link from 'next/link'
           Chat Feature Coming Soon
         </h1>
         <p className="text-sm md:text-base text-blue-700">
-          We're building private messaging just for you. Stay tuned!
+          We&apos;re building private messaging just for you. Stay tuned!
         </p>
         <p className="text-sm md:text-base text-blue-700">
           Use <Link className="underline font-semibold text-blue-900" href="/forums">Forums</Link> Instead ?
