@@ -83,28 +83,26 @@ const ChatForum = ({ clerkUser, slug }) => {
 
   return (
     <div className="flex flex-col h-[calc(100vh-80px)] overflow-hidden">
-      <Chat client={client}>
+      <Chat client={client} theme={theme === 'light' ? 'str-chat__theme-light' : 'str-chat__theme-dark'}>
         <Channel channel={channel}>
           <Window>
-            <div className="flex justify-between items-center px-4 py-2 border-b">
-              <ChannelHeader />
-              <button
-                onClick={toggleTheme}
-                className="text-sm px-3 py-1 rounded bg-gray-200 dark:bg-gray-700 dark:text-white transition"
-              >
+            <ChannelHeader />
+            <div>
+              <button onClick={toggleTheme} className="theme-toggle-btn">
                 {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
               </button>
             </div>
             <div className="flex-1 overflow-y-auto">
               <MessageList />
             </div>
-            <div className="p-2 border-t bg-white dark:bg-gray-900">
+            <div className={`p-2 border-t ${theme === 'light' ? 'bg-white' : 'bg-[#1a1a1a]'}`}>
               <MessageInput />
             </div>
           </Window>
           <Thread />
         </Channel>
       </Chat>
+
     </div>
   );
 };
