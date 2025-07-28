@@ -99,7 +99,9 @@ export default function Home() {
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">Ready to Start Yappin?</h2>
           <p className="text-xl mb-10 opacity-90">Be part of something new. Real-time chat made simple and fun.</p>
           <button className="group px-10 py-5 rounded-full bg-white text-blue-700 text-xl font-bold shadow-2xl hover:bg-gray-100 transition duration-300 transform hover:-translate-y-1 flex items-center justify-center mx-auto space-x-3">
-            <span>Get Started Free</span>
+            <Link href="/forums">
+              <span>Get Started Free</span>
+            </Link>
             <ArrowRight className="w-7 h-7 transform group-hover:translate-x-1 transition-transform duration-300" />
           </button>
         </div>
