@@ -26,8 +26,10 @@ export default function Home() {
         </div>
         <div className="relative z-10 container mx-auto max-w-4xl">
           <h1 className="text-5xl transition-all sm:text-6xl lg:text-7xl font-extrabold leading-tight text-gray-900 mb-6">
+            <span className="font-extrabold">
             <RotateWords text="Chat&nbsp;" words={["Yappfully", "Non-Stop", "Anytime", "Together", "Endless", "Regularly"]} />
             Connect Instantly.
+            </span>
           </h1>
           <p className="text-xl sm:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto">
             Yappin is real-time messaging that feels smooth, simple, and natural.</p>
