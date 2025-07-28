@@ -1,6 +1,6 @@
 'use client'
 
-export default function ChatComingSoon() {
+ export default function ChatComingSoon() {
   return (
     <div className="h-[91.7vh] overflow-hidden flex items-center justify-center bg-gradient-to-br from-blue-50 to-blue-200">
       <div className="text-center animate-fade-in px-4">
@@ -10,6 +10,9 @@ export default function ChatComingSoon() {
         </h1>
         <p className="text-sm md:text-base text-blue-700">
           We're building private messaging just for you. Stay tuned!
+        </p>
+        <p className="text-sm md:text-base text-blue-700">
+          Use <a className="underline font-semibold text-blue-900" href="/forums">Forums</a> Instead ?
         </p>
       </div>
 
