@@ -78,7 +78,7 @@ const ChatForum = ({ clerkUser, slug }) => {
   if (!client || !channel) return <div className="p-4 text-center">Loading chat...</div>;
 
   return (
-    <div className="flex flex-col h-[calc(100vh-80px)] overflow-hidden">
+    <div className="flex flex-col h-[100vh] overflow-hidden">
       <Chat client={client} theme={`str-chat__theme-${theme}`}>
         <Channel channel={channel}>
           <Window>

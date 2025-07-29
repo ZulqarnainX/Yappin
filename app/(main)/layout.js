@@ -26,7 +26,7 @@ export const metadata = {
   description: "Yappin is a real-time messaging platform focused on authentic, fast, and expressive communication. Designed for casual conversations, group chats, and spontaneous moments.",
 };
 
-export default function RootLayout({ children }) {
+export default function mainLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en">
