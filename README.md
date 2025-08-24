@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#  Yappin – Built for Talkers
 
-## Getting Started
+![Yappin Preview](./public/preview.gif)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌟 Overview
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Welcome to **Yappin** — your space to talk, share, and connect with others.
+The **forums are live** and ready for you to start discussions, ask questions, or just hang out.
+We’re also working on a **real-time chat feature**, so soon you’ll be able to chat instantly with your community.
 
-## Learn More
+The design is clean, responsive, and easy to use, so whether you’re on a phone or a laptop, Yappin feels smooth and simple. It’s all about making conversations feel natural and fun.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✨ Features
 
-## Deploy on Vercel
+-  **Responsive UI** – Sleek, modern, and mobile-friendly
+-  **Forums System** – Create, view, and reply to posts seamlessly
+-  **Authentication** – Secure sign-up and login
+-  **Real-time Chat** *(In Progress)* – Coming soon for instant communication
+-  **Fast & Scalable** – Built with **Next.js**, **MongoDB**, and modern web technologies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 🚀 Live Preview
+
+
+![Screenshot](./public/preview2.png)
+**[🔗 Visit Yappin](https://yappin-gold.vercel.app/)**
+
+
+
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js
+- **Auth:** Clerk
+- **Chat (Realtime):** Stream
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
+
+
+🔥 *Built with ❤️ by [Zulqarnain](https://github.com/ZulqarnainX)*
