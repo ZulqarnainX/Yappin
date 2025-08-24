@@ -35,7 +35,7 @@ export async function POST(request) {
       "projects",
       "career",
       "gaming",
-      "anime-cartoons",
+      "anime-talks",
     ];
 
     await Promise.all(

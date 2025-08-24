@@ -38,7 +38,7 @@ const topics = [
     text: "Anime & Fandoms",
     img: "/anime.jpg",
     desc: "Join conversations about anime, manga, fan theories, new releases, and your favorite fandoms. Share your anime list or fan art.",
-    slug: "anime-cartoons"
+    slug: "anime-talks"
   },
 ];
 
