@@ -23,6 +23,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Yappin - Built for Talkers",
   description: "Yappin is a real-time messaging platform focused on authentic, fast, and expressive communication. Designed for casual conversations, group chats, and spontaneous moments.",
+  icon: '/favicon.ico'
 };
 
 export default function chatLayout({ children }) {
